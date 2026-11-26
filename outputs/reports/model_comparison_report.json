@@ -1,0 +1,85 @@
+{
+  "timestamp": 1795334912.6759772,
+  "test_dataset": "dataset/splits/images/test",
+  "test_samples_count": 240,
+  "experiment_a_original": {
+    "model_path": "models/trained/cctv_exp_original/weights/best.pt",
+    "split": "test",
+    "precision": 0.8129,
+    "recall": 0.8012,
+    "mAP50": 0.8678,
+    "mAP50_95": 0.5777,
+    "f1_score": 0.807,
+    "inference_ms": 6.69,
+    "eval_duration_sec": 39.1
+  },
+  "experiment_b_augmented": {
+    "model_path": "models/trained/cctv_exp_augmented/weights/best.pt",
+    "split": "test",
+    "precision": 0.8182,
+    "recall": 0.7834,
+    "mAP50": 0.862,
+    "mAP50_95": 0.5836,
+    "f1_score": 0.8004,
+    "inference_ms": 6.41,
+    "eval_duration_sec": 32.7
+  },
+  "environmental_robustness": {
+    "conditions": [
+      "clean",
+      "rain",
+      "fog",
+      "night",
+      "occlusion"
+    ],
+    "original_model": {
+      "clean": {
+        "detections": 46,
+        "avg_conf": 0.692
+      },
+      "rain": {
+        "detections": 41,
+        "avg_conf": 0.705
+      },
+      "fog": {
+        "detections": 37,
+        "avg_conf": 0.675
+      },
+      "night": {
+        "detections": 33,
+        "avg_conf": 0.678
+      },
+      "occlusion": {
+        "detections": 37,
+        "avg_conf": 0.656
+      }
+    },
+    "augmented_model": {
+      "clean": {
+        "detections": 55,
+        "avg_conf": 0.649
+      },
+      "rain": {
+        "detections": 54,
+        "avg_conf": 0.627
+      },
+      "fog": {
+        "detections": 44,
+        "avg_conf": 0.659
+      },
+      "night": {
+        "detections": 45,
+        "avg_conf": 0.642
+      },
+      "occlusion": {
+        "detections": 41,
+        "avg_conf": 0.606
+      }
+    }
+  },
+  "summary": {
+    "precision_delta_pct": 0.65,
+    "recall_delta_pct": -2.22,
+    "mAP50_delta_pct": -0.67
+  }
+}

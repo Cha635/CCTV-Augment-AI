@@ -1,0 +1,7 @@
+names:
+  0: person
+  1: vehicle
+path: dataset/augmented
+test: images/test
+train: images/train
+val: images/val

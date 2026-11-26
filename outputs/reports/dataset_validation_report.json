@@ -1,0 +1,47 @@
+{
+  "dataset_root": "yolo-person-vehicle-dataset",
+  "valid": true,
+  "splits": {
+    "train": {
+      "image_count": 1600,
+      "label_count": 1600,
+      "missing_labels": [],
+      "missing_images": [],
+      "empty_labels": [],
+      "corrupted_boxes": [],
+      "invalid_classes": [],
+      "class_distribution": {
+        "0": 1919,
+        "1": 1331
+      },
+      "total_boxes": 3250
+    },
+    "val": {
+      "image_count": 400,
+      "label_count": 400,
+      "missing_labels": [],
+      "missing_images": [],
+      "empty_labels": [],
+      "corrupted_boxes": [],
+      "invalid_classes": [],
+      "class_distribution": {
+        "0": 467,
+        "1": 324
+      },
+      "total_boxes": 791
+    }
+  },
+  "total_images": 2000,
+  "total_labels": 2000,
+  "total_annotations": 4041,
+  "class_distribution": {
+    "0": 2386,
+    "1": 1655
+  },
+  "class_names": {
+    "0": "person",
+    "1": "vehicle"
+  },
+  "issues": [],
+  "warnings": []
+}

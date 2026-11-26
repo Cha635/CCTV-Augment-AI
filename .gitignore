@@ -1,0 +1,127 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Environments & Virtualenvs
+.env
+.venv
+env/
+venv/
+ENV/
+*env/
+*venv/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# Streamlit local configuration & credentials
+.streamlit/secrets.toml
+
+# Ultralytics & YOLO training runs
+runs/
+*.pt.temp
+*.pth.temp
+*.onnx
+*.engine
+
+# YOLO Model Checkpoints (Keep fine-tuned experiment best weights, ignore intermediate weights)
+models/trained/**/last.pt
+models/trained/**/epoch*.pt
+models/pretrained/yolov8*.pt
+!models/trained/cctv_exp_original/weights/best.pt
+!models/trained/cctv_exp_augmented/weights/best.pt
+
+# Large dataset image files and archives (prevent bloating git repository)
+# Keep the split definitions, YAML configs, and directory structure (.gitkeep)
+dataset/splits/images/
+dataset/augmented/images/
+dataset/original/
+dataset/processed/
+yolo-person-vehicle-dataset/
+*.zip
+*.tar
+*.gz
+*.rar
+
+# Output generation directories (allow directories via .gitkeep, ignore generated runs)
+outputs/augmented_images/*
+outputs/batches/*
+outputs/comparisons/*
+outputs/detections/*
+output/
+!outputs/.gitkeep
+!outputs/reports/
+
+# Temporary and runtime logs (allow directory via .gitkeep)
+logs/*.log
+logs/*_status.json
+!logs/.gitkeep
